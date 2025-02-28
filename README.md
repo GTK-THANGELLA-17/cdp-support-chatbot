@@ -77,9 +77,9 @@ Copy
 http://127.0.0.1:5000/
 You should now be able to interact with the chatbot.
 
-Project Structure
-plaintext
-Copy
+## Project Structure
+
+```plaintext
 cdp-support-chatbot/
 ├── __pycache__/                # Compiled Python files (auto-generated)
 ├── docs_indexer/               # Documentation indexing module (e.g., indexer.py, config.py)
@@ -96,6 +96,7 @@ cdp-support-chatbot/
 ├── docs_index.json             # JSON file containing documentation snippets for CDPs
 ├── README.md                   # Project overview and documentation
 └── requirements.txt            # Python package dependencies
+
 Data Structures & Design Decisions
 Documentation Data: Documentation snippets are stored in docs_index.json. This file maps keywords (e.g., "set up", "profile", "audience") to the corresponding documentation text extracted from the official sources.
 
