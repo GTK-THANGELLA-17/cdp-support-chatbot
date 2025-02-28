@@ -1,0 +1,18 @@
+{
+  "segment": {
+    "set up": "To set up a new source in Segment, follow these steps: 1) Log in to your Segment account, 2) Navigate to the Sources page, 3) Click 'Add Source', 4) Configure source settings as per your requirements. For more details, visit: https://segment.com/docs/sources/",
+    "source": "..."
+  },
+  "mparticle": {
+    "profile": "To create a user profile in mParticle, please see the user management section of the documentation: https://docs.mparticle.com/guides/user-profiles/",
+    "integration": "..."
+  },
+  "lytics": {
+    "audience": "Building an audience segment in Lytics is achieved by navigating to the Audience Builder, selecting your desired filters, and saving the segment. More info: https://docs.lytics.com/audience-segmentation/",
+    "segment": "..."
+  },
+  "zeotap": {
+    "integrate": "To integrate your data with Zeotap, you need to follow our data ingestion guide which explains how to configure data pipelines: https://docs.zeotap.com/integrations/",
+    "data": "..."
+  }
+}

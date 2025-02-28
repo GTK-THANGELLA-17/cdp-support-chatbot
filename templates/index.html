@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDP Support Chatbot</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="#">CDP Chatbot</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <!-- Dark Mode Toggle Button -->
+                <li class="nav-item">
+                    <button id="dark-mode-btn" class="btn btn-outline-light ms-2">
+                        <i class="fas fa-moon"></i> <!-- Font Awesome icon -->
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container text-center">
+            <h1>Welcome to the CDP Support Chatbot</h1>
+            <p>Your assistant for all Customer Data Platform (CDP) queries</p>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features container text-center">
+        <div class="row">
+            <div class="col-md-4">
+                <i class="fas fa-comments fa-3x"></i>
+                <h3>Instant Responses</h3>
+                <p>Get answers to your CDP-related questions in real-time.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-database fa-3x"></i>
+                <h3>Powered by Documentation</h3>
+                <p>Accurate answers extracted directly from official documentation.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-mobile-alt fa-3x"></i>
+                <h3>Fully Responsive</h3>
+                <p>Works on desktop, tablet, and mobile seamlessly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Chatbot Icon -->
+    <div class="chat-toggle">
+        <i class="fas fa-comments"></i>
+    </div>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-container">
+        <div class="chat-header">
+            <i class="fas fa-robot"></i> CDP Chatbot
+            <button id="close-chat"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <div class="bot-message">👋 Hello! Ask me anything about Segment, mParticle, Lytics, or Zeotap.</div>
+        </div>
+        <!-- Chat Footer (Updated with Speech Button) -->
+<div class="chat-footer">
+    <input type="text" id="query" placeholder="Type your question..." autocomplete="off">
+    <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+    <button id="speech-btn"><i class="fas fa-microphone"></i></button> <!-- New speech button -->
+</div>
+
+
+    <!-- Bootstrap & Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+
+</body>
+</html>
